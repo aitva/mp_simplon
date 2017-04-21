@@ -1,0 +1,59 @@
+
+body {
+	margin : 0 ;
+	padding : 10px ;
+}
+		
+.vignette_aside {
+	float : right ;
+	box-sizing : border-box ;
+}
+		
+figcaption {
+	width : 220px ;
+}
+		
+.vignette_aside>figure {
+	margin-right : 0 ;
+}
+		
+.vignette_aside>figure>img {
+	width : 220px ;
+}
+		
+h1, h2, h3 {
+	clear : both ;
+}
+		
+ol>ol>li:before {
+    content : "test" ;
+}
+
+nav a {
+    color : black ;
+    text-decoration : none ;
+}
+
+/* numérotés */
+ul {list-style-type : none ; }
+
+body {
+    counter-reset : T1 0 T2 0 ;
+}
+    /*Titre niveau 1*/
+ul#principal > li {
+    counter-increment : T1 ;
+    counter-reset : T2 ;
+}
+
+ul#principal > li::before {
+    content : counter(T1) " - ";
+}
+    /*Titre niveau 2*/
+ul > li > ul > li {
+    counter-increment : T2 ;
+}
+
+ul#principal > li > ul > li::before {
+    content : counter(T1)"."counter(T2) " - ";
+}

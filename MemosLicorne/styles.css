@@ -1,0 +1,42 @@
+header {
+	margin : auto ;
+}
+
+h1, h2 {
+	text-align : center ;
+}
+
+#avatar {
+	height : 100px ;
+	float : right ;
+}
+
+main {
+	clear : both ;
+	display : flex ;
+	flex-direction : column ;
+	align-items : center ;
+}
+
+section {
+	display : flex ;
+	margin-bottom : 15px ;
+}
+
+aside {margin-right : 2em ;}
+
+hr {
+	width : 80% ;
+}
+
+.codeHTML {
+	border : 1px solid black ;
+	max-width : 600px ;
+	margin : auto ;
+	padding : 0.5em ;
+	box-sizing : border-box ;
+}
+
+.indente {
+	margin-left : 2em ;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Mémo html - formulaires</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header>
+	<img id="avatar" src="avatar.png" alt="tête de licorne" title="LaLicorne" />
+	<h1>Les mémos de LaLicorne</h1>
+	<h2>Les formulaires html</h2>
+</header>
+	
+	
+<main>
+	<section>
+		<aside>
+			<label for="ameliorer">Suggestions d'améliorations</label>
+				<textarea id="ameliorer" name="messageAmeliore">Votre message (valeur par défaut) ici.</textarea>
+		</aside>
+		<p class="codeHTML">
+			&lt;label for="ameliorer"&gt;Suggestions d'améliorations&lt;/label&gt;<br/>
+			&lt;textarea id="ameliorer" name="messageAmeliore"&gt;<br/>
+				<span class="indente">Votre message (valeur par défaut) ici.</span><br/>
+			&lt;/textarea&gt;
+		</p>
+	</section>
+	<hr/>
+	<section>
+		<aside>
+			<label for="pays">Dans quel pays habitez-vous ?</label>
+				<select name="choixPays" id="pays">
+					<option value="fr" selected >France</option>
+					<option value="be">Belgique</option>
+					<option value="ch">Suisse</option>
+				</select>
+		</aside>
+		<p class="codeHTML">
+			&lt;label for="pays"&gt;Dans quel pays habitez-vous ?&lt;/label&gt;<br/>
+				&lt;select name="choixPays" id="pays"&gt;<br/>
+					<span class="indente">&lt;option value="fr" selected &gt;France&lt;/option&gt;</span><br/>
+					<span class="indente">&lt;option value="be"&gt;Belgique&lt;/option&gt;</span><br/>
+					<span class="indente">&lt;option value="ch"&gt;Suisse&lt;/option&gt;</span><br/>
+				&lt;/select&gt;
+		</p>
+	</section>
+	<hr/>
+	<section>
+		<aside>
+			<label for="pseudo">Votre pseudo :</label>
+				<input id="pseudo" name="idpseudo" type="text" value="par défaut"/>
+		</aside>
+		
+		<p class="codeHTML">&lt;label for="pseudo"&gt;Votre pseudo :&lt;/label&gt;<br/>
+			&lt;input id="pseudo" name="idpseudo" type="text" value="par défaut"/&gt;
+		</p>
+	</section>
+	<hr/>
+	<section>
+		<aside>
+			<p>Sélectionnez votre accompagnement:</p>
+			<input type="radio" name="accompagne" value="fritept" id="friteP" checked /> <label for="friteP">Petite frite</label>
+			<input type="radio" name="accompagne" value="fritegr" id="friteG" /> <label for="friteG">Grande frite</label>
+			<input type="radio" name="accompagne" value="potato" id="patate" /> <label for="patate">Potatoes</label>
+			<input type="radio" name="accompagne" value="salad" id="prlapins" /> <label for="prlapins">Salade</label>
+		</aside>
+		<p class="codeHTML">&lt;p&gt;Sélectionnez votre accompagnement:&lt;/p&gt;<br/>
+&lt;input type="radio" name="accompagne" value="fritept" id="friteP" checked /&gt; &lt;label for="friteP"&gt;Petite frite&lt;/label&gt;<br/>
+&lt;input type="radio" name="accompagne" value="fritegr" id="friteG" /&gt; &lt;label for="friteG"&gt;Grande frite&lt;/label&gt;<br/>
+&lt;input type="radio" name="accompagne" value="potato" id="patate" /&gt; &lt;label for="patate"&gt;Potatoes&lt;/label&gt;<br/>
+&lt;input type="radio" name="accompagne" value="salad" id="prlapins" /&gt; &lt;label for="prlapins"&gt;Salade&lt;/label&gt;</p>
+	</section>
+	<hr/>
+	<section>
+		<aside>
+		<p>Que souhaitez-vous apprendre ?</p>
+<input type="checkbox" name="casehtml" id="htmlcss" /> <label for="htmlcss">Html-CSS</label>
+<input type="checkbox" name="caseJS" id="js" /> <label for="js">Javascript</label>
+<input type="checkbox" name="casephp" id="phpsql" /> <label for="phpsql">Php-SQL</label>
+		</aside>
+		<p class="codeHTML">&lt;p&gt;Que souhaitez-vous apprendre ?&lt;/p&gt;<br/>
+&lt;input type="checkbox" name="casehtml" id="htmlcss" /&gt; &lt;label for="htmlcss"&gt;Html-CSS&lt;/label&gt;<br/>
+&lt;input type="checkbox" name="caseJS" id="js" /&gt; &lt;label for="js"&gt;Javascript&lt;/label&gt;<br/>
+&lt;input type="checkbox" name="casephp" id="phpsql" /&gt; &lt;label for="phpsql"&gt;Php-SQL&lt;/label&gt;</p>
+	</section>
+	<hr/>
+	<section>
+		<aside>
+			<input type="submit" value="Valider" />
+		</aside>
+		<p class="codeHTML">&lt;input type="submit" value="Valider" /&gt;</p>
+	</section>
+
+</main>	
+	
+
+</body>
+
+</html>

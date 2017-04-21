@@ -1,0 +1,16 @@
+body {
+	background : linear-gradient(to bottom, #FFFFFF, #B2CCA2) fixed no-repeat;	
+	margin : 0 ;
+	padding : 2em ;
+	min-height : 100vh ;
+	box-sizing : border-box ;
+	text-align : center ;
+}
+
+header > h1 {margin-top : 0;}
+
+h2 {margin-left : 2em ;}
+
+.♥secret {
+	display : none ;
+}
