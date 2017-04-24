@@ -1,0 +1,96 @@
+body, h1, h2 {
+    margin : 0 ;
+    padding : 0 ;
+    font-family : sans-serif ;
+}
+
+header {
+    background : hsl(120, 100%, 33%) ;
+    padding : 1.5em ;
+    display : flex ;
+}
+
+h1 {margin-right : 2em ;}
+nav {flex-grow : 1 ;}
+nav > ul {
+    margin : 0 ;
+    padding : 0 ;
+    display : flex ;
+    justify-content : space-around ;
+    height : 100% ;
+    align-items : center ;
+}
+nav > ul > li {list-style-type : none ;}
+nav > ul > li > a {
+    text-decoration : none ;
+    color : white ;
+    text-transform : uppercase ;
+    font-weight : bold ;
+    font-size : 0.9em ;
+}
+nav > ul > li > .ss-menu::after {
+    content : " ▼" ;
+}
+nav > ul > li > a:hover {color : black ;}
+
+
+/* DIAPORAMA */
+    #sliders {
+        background : url("header1.jpg") center center no-repeat ;
+        backgrouns-size : cover ;
+        height : 80vh ;
+        display : flex ;
+        align-items : center ;
+    }
+
+    #sliders > p {
+        background : hsl(120, 100%, 33%) ;
+        margin : 0 ;
+        color : white ;
+        font-size : 2em ;
+        font-weight : bold ;
+        padding : 0.5em ;
+    }
+    #sliders > p:hover {opacity : 0.5 ;}
+
+#sliders > p:first-child {margin-right : 1em ;}
+
+    #sliders > div {
+        flex-grow : 1 ;
+    }
+    #sliders > div > p, #sliders > div > h2 {
+        flex-grow : 1 ;
+        color : white ;
+        text-transform : uppercase ;
+        text-shadow : 1px 1px 1px grey ;
+    }
+    
+    h2 {font-size : 3.5em ;}
+
+    div > p {
+        font-size : 1.2em ;
+        font-style : italic ;
+    }
+    
+    #sliders > div > button {
+        color : white ;
+        text-transform : uppercase ;
+        background : hsl(120, 100%, 33%) ;
+        font-size : 1.5em ;
+        padding : 1em ;
+        border : none ;
+        font-weight : bold ;
+    }
+
+#accroche {
+    text-align : center ;
+    color : #626c72 ;
+}
+
+#accroche > h3 {
+    font-size : 2em ;
+    margin-bottom : 0.4em ;
+}
+
+#accroche > p {font-size : 0.8em ;}
+
