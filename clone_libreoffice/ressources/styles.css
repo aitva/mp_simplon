@@ -5,42 +5,92 @@ body, h1, h2 {
 }
 
 header {
+    position : fixed ;
+    width : 100% ;
     background : hsl(120, 100%, 33%) ;
-    padding : 1.5em ;
+    line-height : 5em ;
     display : flex ;
-}
-
-h1 {margin-right : 2em ;}
-nav {flex-grow : 1 ;}
-nav > ul {
-    margin : 0 ;
-    padding : 0 ;
-    display : flex ;
-    justify-content : space-around ;
-    height : 100% ;
     align-items : center ;
 }
-nav > ul > li {list-style-type : none ;}
-nav > ul > li > a {
-    text-decoration : none ;
-    color : white ;
-    text-transform : uppercase ;
-    font-weight : bold ;
-    font-size : 0.9em ;
+
+h1 {
+    margin-left : 0.5em ;
+    margin-right : 2em ;
+    display : table-cell ;
+    vertical-align : middle ;
 }
-nav > ul > li > .ss-menu::after {
-    content : " ▼" ;
+
+h1 > a {
+    display : block ;
+    line-height : 0 ;
 }
-nav > ul > li > a:hover {color : black ;}
+/* MENU DE NAVIGATION */
+
+    nav {flex-grow : 1 ;}
+
+    #menu-nav {
+		display : flex ;
+        margin : 0 ;
+        padding : 0 ;
+        justify-content : space-around ;
+        height : 100% ;
+        align-items : center ;
+    }
+    #menu-nav > li {
+        list-style-type : none ;
+        color : white ;
+        text-transform : uppercase ;
+        font-weight : bold ;
+        font-size : 0.9em ;
+    }
+    #menu-nav > .ss-menu-titre::after {
+        content : " ▼" ;
+    }
+
+    /* SOUS MENUS */
+
+        #menu-nav, .ss-menu-titre > ul {
+			padding : 0 ;
+			margin : 0 ;
+            list-style : none ;
+		}
+
+       .ss-menu-titre > ul {
+			line-height : 2em ;
+        }
+
+		#menu-nav a {
+			text-decoration : none ;
+			color:white;
+		}
+        #menu-nav > li:hover {color : black ;}
+
+		#menu-nav ul {	
+		 /*on cache les sous menus complètement sur la gauche*/
+            position : absolute ;
+            display : none ;
+            background : hsl(207, 8%, 21%) ; 
+            padding-right : 2em ;
+			z-index : 5 ;
+            padding : 1em ;
+            font-weight : normal ;
+            text-transform : none ;
+		}
+
+		#menu-nav > .ss-menu-titre:hover > .ss-menu-nav  {
+		/* Au survol des li du menu on replace les sous menus */
+			display : inherit ;
+		}
 
 
 /* DIAPORAMA */
     #sliders {
         background : url("header1.jpg") center center no-repeat ;
         backgrouns-size : cover ;
-        height : 80vh ;
+        height : 90vh ;
         display : flex ;
         align-items : center ;
+        padding-top : 5em ;
     }
 
     #sliders > p {
@@ -57,7 +107,9 @@ nav > ul > li > a:hover {color : black ;}
 
     #sliders > div {
         flex-grow : 1 ;
+        margin-top : 8em ;
     }
+
     #sliders > div > p, #sliders > div > h2 {
         flex-grow : 1 ;
         color : white ;
@@ -65,7 +117,7 @@ nav > ul > li > a:hover {color : black ;}
         text-shadow : 1px 1px 1px grey ;
     }
     
-    h2 {font-size : 3.5em ;}
+    h2 {font-size : 3.75em ;}
 
     div > p {
         font-size : 1.2em ;
