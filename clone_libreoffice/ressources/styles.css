@@ -4,7 +4,9 @@ body, h1, h2 {
     font-family : sans-serif ;
 }
 
-header {
+a {text-decoration : none ;}
+
+#banniere {
     position : fixed ;
     width : 100% ;
     background : hsl(120, 100%, 33%) ;
@@ -59,10 +61,7 @@ h1 > a {
 			line-height : 2em ;
         }
 
-		#menu-nav a {
-			text-decoration : none ;
-			color:white;
-		}
+		#menu-nav a {color:white;}
         #menu-nav > li:hover {color : black ;}
 
 		#menu-nav ul {	
@@ -119,12 +118,12 @@ h1 > a {
     
     h2 {font-size : 3.75em ;}
 
-    div > p {
+    #sliders p {
         font-size : 1.2em ;
         font-style : italic ;
     }
     
-    #sliders > div > button {
+    /*#sliders > div >*/ button {
         color : white ;
         text-transform : uppercase ;
         background : hsl(120, 100%, 33%) ;
@@ -146,3 +145,165 @@ h1 > a {
 
 #accroche > p {font-size : 0.8em ;}
 
+/**/
+
+#avantages {
+
+}
+
+.flexalignreg {
+    display : flex ;
+    justify-content : space-around ;
+    color : #626c72 ;
+    margin-top : 3em ;
+}
+
+.flexalignreg > div > h3 {font-size : 1.5em ;}
+
+.flexalignreg > div {
+    width : 27% ;
+    text-align : center ;
+}
+
+.flexalignreg p {
+    font-size : 0.9em ;
+}
+
+.flexalignreg a {
+    color : hsl(120, 100%, 33%) ;
+    font-size : 1.1em ;
+}
+
+.flexalignreg a:hover {
+    color : #626c72 ;
+}
+
+/* Section PARTICIPEZ */
+
+#participez {
+    background : url("quote-bg.jpg") no-repeat left center ;
+    background-size : cover ;
+    display : flex ;
+    margin-bottom : 50px ;
+}
+
+#participez {
+    color : white ;
+}
+#participez > div > h3 {
+    font-size : 2em ;
+    margin-bottom : 0 ;
+}
+#participez > div > p {
+    margin-top : 0 ;
+    margin-right : 5em ;
+    font-size : 2em ;
+    margin-bottom : 0.5em ;
+}
+
+#participez > div > p:nth-of-type(2) {text-align : right ;}
+
+#participez button {
+    font-size : 0.5em ;
+    border-radius : 5px ;
+}
+
+#participez > p > img {margin : 2em 5em 0 5em ;}
+
+#extraits {
+    display : flex ;
+    text-align : center ;
+    justify-content : space-between ;
+    padding : 0 2em 0 2em ;
+}
+#extraits > div {
+    display : flex ;
+    flex-wrap : wrap ;
+    justify-content : space-around ;
+}
+
+#extraits header {
+    width : 100% ;
+    height : 5em ;
+}
+#extraits article {
+    background : hsl(200, 16%, 89%) ;
+    border-radius : 3px ;
+    width : 45% ;
+    height : auto ;
+}
+
+#extraits {
+    color : #626c72 ;
+    word-wrap: break-word ;
+
+}
+#extraits p {font-size : 0.9em ;}
+
+#extraits a {
+    color : hsl(120, 100%, 33%) ;
+}
+
+/* Suivez-nous */
+
+#reseaux_sociaux {
+    text-align : center ;
+    color : #626c72 ;
+    padding-bottom : 1em ;
+}
+
+#reseaux_sociaux button {
+    font-size : 1em ;
+    border-radius : 5px ;
+    text-transform : none ;
+    padding : 0 1em 0 1em ;
+    line-height : 3em ;
+}
+
+#reseaux_sociaux button > img {
+    width : 1.5em ;
+    position : relative ;
+    top : 0.3em ;
+}
+
+#actu_tweet h3, #reseaux_sociaux h3 {font-size : 2em ;}
+
+/*Derniers tweets*/
+#actu_tweet {
+    background : hsl(207, 8%, 21%) ;
+    text-align : center ;
+    color : #626c72 ;
+    padding-top : 1em ;
+
+    display : flex ;
+    flex-wrap : wrap ;
+    justify-content : space-around ;
+}
+#actu_tweet h3 {
+    margin : 0 ;
+    width : 100% ;
+}
+#actu_tweet div {
+    width : 40% ;
+}
+
+#actu_tweet p:nth-child(2) {
+    background : hsl(212, 8%, 35%) ;
+    border-radius : 3px ;
+    line-height : 3em ;
+}
+
+#actu_tweet a {
+    color : hsl(120, 100%, 33%) ;
+}
+
+/* FOOTER */
+footer {
+    background : hsl(204, 6%, 16%) ;
+    color : #626C72 ;
+    text-align : center ;
+    padding : 1em 3em 1em 3em ;
+    font-size : 0.7em ;
+}
+
+footer a {color : hsl(120, 100%, 33%) ;}
