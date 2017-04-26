@@ -13,7 +13,7 @@ body {
 
 #rarity {
     background : url("rarity__sprite_by_perfectsyntax-daqf09f.png") no-repeat left top ;
-    animation : rarity-droite 2s steps(1) infinite, rarity-avance 4s infinite linear ;
+    animation : rarity-droite 1s steps(1) infinite, rarity-avance 4s infinite linear ;
     background-size : 288px 512px ;
     width : 96px ;
     height : 128px ;
@@ -49,16 +49,16 @@ body {
 /* Animation carre */
 @keyframes carreInstable {
     0% {
-        border-radius : 0 ;
-        left : 0 ;
-        top : 0 ;
+		left : 0 ;
+		border-radius : 0 ;
+        top : 128px ;
         background : red ;
         width : 4em ;
         height : 4em ; 
     } 25% {
         border-radius : 50% ;
         left : calc(100% - 4em) ;
-        top : 0 ;
+        top : 128px ;
         background : red ;
         width : 4em ;
         height : 4em ; 
@@ -72,14 +72,14 @@ body {
     } 75% {
         border-radius : 0 ;
         left : 0 ;
-        top : calc(100% - 4em) ;
+        top : calc(100% - 6em) ;
         background : green ;
         width : 2em ;
         height : 6em ;      
     } 100% {
         border-radius : 0 ;
         left : 0 ;
-        top : 0 ;
+        top : 128px ;
         background : red ;
         width : 4em ;
         height : 4em ; 

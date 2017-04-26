@@ -80,6 +80,24 @@ h1 > a {
 		/* Au survol des li du menu on replace les sous menus */
 			display : inherit ;
 		}
+/* MEDIAS QUERIES*/
+@media screen and (min-width: 865px) and (max-width: 1025px) {
+    #banniere {line-height : 3em ;}
+    #menu-nav > li {
+        font-weight : normal ;
+        font-size : 0.7em ;
+    }
+    #logo {
+        height : 30px ;
+    }
+
+    h1 {margin-right : 0.75em ;}
+
+}
+
+@media screen and (max-width: 864px) {
+    /*Petit écran, passe en menu hamburger */
+}
 
 
 /* DIAPORAMA */
@@ -222,6 +240,11 @@ h1 > a {
     justify-content : space-around ;
     align-content : flex-start ;
 }
+/*testé sans succès sur div :
+align-items : stretch ;
+sur article :
+height : auto, 100% ou autre valeur (pas logique ?!)
+*/
 
 #extraits header {
     width : 100% ;
@@ -231,8 +254,9 @@ h1 > a {
     background : hsl(200, 16%, 89%) ;
     border-radius : 3px ;
     width : 45% ;
-    height : auto ;
+    height : 85% ;
 }
+
 
 #extraits {
     color : #626c72 ;
