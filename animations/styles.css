@@ -1,0 +1,52 @@
+/* Statut initial */
+
+body {
+    margin : 0 ;
+    padding : 0 ;
+}
+
+#perso {
+    position : absolute ;
+    animation : carreInstable 10s infinite ;
+}
+
+/* Animation */
+@keyframes carreInstable {
+    0% {
+        border-radius : 0 ;
+        left : 0 ;
+        top : 0 ;
+        background : red ;
+        width : 4em ;
+        height : 4em ; 
+    } 25% {
+        border-radius : 50% ;
+        left : calc(100% - 4em) ;
+        top : 0 ;
+        background : red ;
+        width : 4em ;
+        height : 4em ; 
+    } 50% {
+        border-radius : 0 ;
+        left : calc(100% - 4em) ;
+        top : calc(100% - 4em) ;
+        background : red ;
+        width : 4em ;
+        height : 4em ; 
+    } 75% {
+        border-radius : 0 ;
+        left : 0 ;
+        top : calc(100% - 4em) ;
+        background : green ;
+        width : 2em ;
+        height : 6em ;      
+    } 100% {
+        border-radius : 0 ;
+        left : 0 ;
+        top : 0 ;
+        background : red ;
+        width : 4em ;
+        height : 4em ; 
+    }
+
+}
