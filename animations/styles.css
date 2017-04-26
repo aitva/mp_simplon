@@ -13,14 +13,15 @@ body {
 
 #rarity {
     background : url("rarity__sprite_by_perfectsyntax-daqf09f.png") no-repeat left top ;
-    animation : rarity 2s steps(1) infinite;
+    animation : rarity-droite 2s steps(1) infinite, rarity-avance 4s infinite linear ;
     background-size : 288px 512px ;
     width : 96px ;
     height : 128px ;
+    position : absolute ;
 }
 
 /* Animation Rarity */
-@keyframes rarity {
+@keyframes rarity-droite {
     0% {
         background-position : -96px -256px ;
     } 25% {
@@ -33,6 +34,16 @@ body {
         background-position : -96px -256px ;
     }
 }
+
+@keyframes rarity-avance {
+    from {
+        left : 0 ;
+    }
+    to {
+        left : calc(100% - 96px) ;
+    }
+}
+
 
 
 /* Animation carre */
